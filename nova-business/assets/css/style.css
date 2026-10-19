@@ -253,9 +253,11 @@ button { cursor: pointer; }
 .service-row {
   display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; align-items: center;
   background: var(--color-surface); border-radius: var(--radius-md); padding: 18px 20px; text-decoration: none;
-  transition: transform .25s;
 }
-.service-row:hover { transform: translateX(6px); }
+/* CSS hover only when animations are off; with animations on, main.js handles it
+   (a CSS transform transition would fight GSAP and leave elements stuck mid-move) */
+html:not(.js-motion) .service-row { transition: transform .25s; }
+html:not(.js-motion) .service-row:hover { transform: translateX(6px); }
 /* Same illustration as on the services page, shown small on a tinted tile */
 .service-row__icon { width: 72px; height: 72px; border-radius: 20px; display: grid; place-items: center; background: var(--tone-tint); padding: 8px; }
 .service-row__icon img { width: 100%; height: auto; transition: transform .3s; }
@@ -268,10 +270,13 @@ button { cursor: pointer; }
 /* Colored disc behind an illustration; grows on hover */
 .disc-stage { position: relative; width: 100%; max-width: 340px; aspect-ratio: 1; margin-inline: auto; }
 @media (min-width: 1024px) { .disc-stage { max-width: 500px; } }
-.disc-stage__disc { position: absolute; inset: 0; border-radius: 50%; background: var(--tone); clip-path: circle(36% at 50% 52%); transition: clip-path .5s; }
-.disc-stage:hover .disc-stage__disc { clip-path: circle(48% at 50% 52%); }
-.disc-stage__img { position: absolute; inset: 0; margin: auto; width: 66%; height: auto; transition: transform .5s; filter: drop-shadow(0 22px 22px rgba(30, 27, 46, .2)); }
-.disc-stage:hover .disc-stage__img { transform: translateY(-8px) rotate(-3deg) scale(1.04); }
+.disc-stage__disc { position: absolute; inset: 0; border-radius: 50%; background: var(--tone); clip-path: circle(36% at 50% 52%); }
+.disc-stage__img { position: absolute; inset: 0; margin: auto; width: 66%; height: auto; filter: drop-shadow(0 22px 22px rgba(30, 27, 46, .2)); }
+/* Hover effect without JavaScript; main.js does the same with GSAP when animations are on */
+html:not(.js-motion) .disc-stage__disc { transition: clip-path .5s; }
+html:not(.js-motion) .disc-stage:hover .disc-stage__disc { clip-path: circle(48% at 50% 52%); }
+html:not(.js-motion) .disc-stage__img { transition: transform .5s; }
+html:not(.js-motion) .disc-stage:hover .disc-stage__img { transform: translateY(-8px) rotate(-3deg) scale(1.04); }
 
 .checklist { display: grid; gap: 10px; margin-top: 24px; }
 .checklist li { display: flex; gap: 12px; align-items: flex-start; }

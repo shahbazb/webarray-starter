@@ -442,6 +442,25 @@
     });
   });
 
+  /* Hover for the services showcase: the disc grows and the illustration lifts.
+     Done here rather than in CSS so it never fights the GSAP slide-in animation. */
+  $$(".disc-stage").forEach(function (stage) {
+    var img = $(".disc-stage__img", stage);
+    var disc = $(".disc-stage__disc", stage);
+    stage.addEventListener("mouseenter", function () {
+      gsap.to(disc, { clipPath: "circle(48% at 50% 52%)", duration: 0.6, ease: "power3.out" });
+      gsap.to(img, { y: -10, rotation: -4, scale: 1.05, duration: 0.6, ease: "back.out(2)" });
+    });
+    stage.addEventListener("mouseleave", function () {
+      gsap.to(disc, { clipPath: "circle(36% at 50% 52%)", duration: 0.5, ease: "power3.inOut" });
+      gsap.to(img, { y: 0, rotation: 0, scale: 1, duration: 0.5, ease: "power3.inOut" });
+    });
+  });
+  $$(".service-row").forEach(function (row) {
+    row.addEventListener("mouseenter", function () { gsap.to(row, { x: 6, duration: 0.3, ease: "power2.out" }); });
+    row.addEventListener("mouseleave", function () { gsap.to(row, { x: 0, duration: 0.3, ease: "power2.out" }); });
+  });
+
   /* Clothesline: line draws in, tags drop onto their pegs, sway, and swing with fast scrolling */
   if (lineApi) {
     var swings = lineApi.tags.map(function (t) { return $(".tag__swing", t); });

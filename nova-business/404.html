@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: change the title and description on every page -->
+  <title>Page not found | Nova Business</title>
+  <meta name="description" content="The page you were looking for could not be found.">
+  <meta name="theme-color" content="#1e1b2e">
+
+  <!-- Social sharing (Open Graph / X). Replace https://example.com with your own domain:
+       social networks need absolute URLs for og:url and og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nova Business">
+  <meta property="og:title" content="Page not found | Nova Business">
+  <meta property="og:description" content="The page you were looking for could not be found.">
+  <meta property="og:url" content="https://example.com/404.html">
+  <meta property="og:image" content="https://example.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Fonts: Young Serif + Schibsted Grotesk from Google Fonts (SIL Open Font License).
+       To change fonts, swap this link and the --font-display / --font-body variables in style.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="robots" content="noindex">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================================================================
+       HEADER: logo, main navigation and mobile menu button.
+       Edit the links here and in the mobile menu below (keep both in sync).
+       ================================================================== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Nova Business home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span class="brand__name">Nova Business</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-drop">
+          <a class="nav-drop__toggle" href="services.html" aria-haspopup="true">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></a>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="services.html#strategy" class="tone-1"><span class="dot" aria-hidden="true"></span><span><strong>Strategy and planning</strong> <small>Workshops, research and a practical plan your team can follow.</small></span></a></li>
+              <li><a href="services.html#brand" class="tone-2"><span class="dot" aria-hidden="true"></span><span><strong>Brand and design</strong> <small>Logos, visual systems and the guidelines to use them well.</small></span></a></li>
+              <li><a href="services.html#web" class="tone-3"><span class="dot" aria-hidden="true"></span><span><strong>Websites and digital tools</strong> <small>Fast, accessible websites and simple tools your customers enjoy using.</small></span></a></li>
+              <li><a href="services.html#operations" class="tone-4"><span class="dot" aria-hidden="true"></span><span><strong>Operations and support</strong> <small>Ongoing care: updates, small improvements and a team that answers.</small></span></a></li>
+              <li><a class="nav-menu__all" href="services.html">All services and packages</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="btn btn--outline btn--sm" href="contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="menu-btn__open" d="M3 6h14M3 14h14"/><path class="menu-btn__close" d="M5 5l10 10M15 5 5 15" display="none"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (shown below 1024px). Services is an accordion. -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-services">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></button>
+        <ul class="mobile-menu__sub" id="mobile-services" hidden>
+            <li><a href="services.html">All services and packages</a></li>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contact.html">Contact us</a>
+    <p class="mobile-menu__contact"><a href="mailto:hello@example.com">hello@example.com</a><br><a href="tel:+15550100123">+1 (555) 010-0123</a></p>
+  </div>
+
+  <main id="main" class="not-found">
+    <div>
+      <p class="kicker">Error 404</p>
+      <h1 class="h1">We couldn't find that page</h1>
+      <p class="lede">The link may be old or mistyped. Try the home page or get in touch.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="index.html">Go to the home page</a>
+        <a class="text-link" href="contact.html">Contact us</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================================================================
+       FOOTER: brand blurb, links, contact details and copyright.
+       ================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__cols">
+        <div class="site-footer__about">
+          <a class="brand" href="index.html" aria-label="Nova Business home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span class="brand__name">Nova Business</span>
+          </a>
+          <p>Strategy, brand, websites and support for small and mid-sized companies.</p>
+        </div>
+        <nav aria-labelledby="footer-services">
+          <h2 id="footer-services">Services</h2>
+          <ul>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-company">
+          <h2 id="footer-company">Company</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+15550100123">+1 (555) 010-0123</a></li>
+            <li><address>Unit 4, 21 Harbour Lane<br>Brightwater 00000</address></li>
+          </ul>
+          <!-- Social links: replace each URL with your own profile, or delete the line -->
+          <ul>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tone-stripe" data-stagger="grow" aria-hidden="true"><span style="background:var(--tone-1)"></span><span style="background:var(--tone-2)"></span><span style="background:var(--tone-3)"></span><span style="background:var(--tone-4)"></span><span style="background:var(--tone-5)"></span></div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span data-year>2026</span> Nova Business. Demo content for a fictional company.</p>
+        <p>Template by <a href="https://webarray.net">WebArray</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts. GSAP powers the animations; the site still works (without motion) if it fails to load.
+       GSAP is free under the GSAP Standard License: https://gsap.com/standard-license -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

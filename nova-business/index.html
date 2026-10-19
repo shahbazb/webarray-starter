@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: change the title and description on every page -->
+  <title>Nova Business | Strategy, brand and websites for growing companies</title>
+  <meta name="description" content="Nova Business helps small and mid-sized companies with strategy, branding, websites and ongoing digital support.">
+  <meta name="theme-color" content="#1e1b2e">
+
+  <!-- Social sharing (Open Graph / X). Replace https://example.com with your own domain:
+       social networks need absolute URLs for og:url and og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nova Business">
+  <meta property="og:title" content="Nova Business | Strategy, brand and websites for growing companies">
+  <meta property="og:description" content="Nova Business helps small and mid-sized companies with strategy, branding, websites and ongoing digital support.">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Fonts: Young Serif + Schibsted Grotesk from Google Fonts (SIL Open Font License).
+       To change fonts, swap this link and the --font-display / --font-body variables in style.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Structured data (schema.org) for search engines. Replace every value with your real details,
+       or delete this block. Validate at https://validator.schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Nova Business",
+    "description": "Strategy, brand, websites and support for small and mid-sized companies.",
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/images/logo.svg",
+    "image": "https://example.com/assets/images/og-image.png",
+    "email": "hello@example.com",
+    "telephone": "+15550100123",
+    "address": { "@type": "PostalAddress", "streetAddress": "Unit 4, 21 Harbour Lane", "addressLocality": "Brightwater", "postalCode": "00000" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How much does a project cost?", "acceptedAnswer": { "@type": "Answer", "text": "Every project is quoted after a short discovery call. Most small business websites fit one of our three packages; larger projects are priced by scope." } },
+      { "@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": { "@type": "Answer", "text": "Brand and website projects usually take 4 to 12 weeks, depending on size and how quickly feedback comes back." } },
+      { "@type": "Question", "name": "Can we update the website ourselves?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build on tools your team can use, and every project includes a training session." } },
+      { "@type": "Question", "name": "Do you work with businesses in other cities?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most workshops and reviews run online, and we meet in person when it helps." } },
+      { "@type": "Question", "name": "What do you need from us to get started?", "acceptedAnswer": { "@type": "Answer", "text": "A short call, any existing brand material, and one person on your side who can make decisions." } },
+      { "@type": "Question", "name": "Do you offer support after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our monthly support plans cover updates, backups, fixes and small improvements." } }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================================================================
+       HEADER: logo, main navigation and mobile menu button.
+       Edit the links here and in the mobile menu below (keep both in sync).
+       ================================================================== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Nova Business home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span class="brand__name">Nova Business</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-drop">
+          <a class="nav-drop__toggle" href="services.html" aria-haspopup="true">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></a>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="services.html#strategy" class="tone-1"><span class="dot" aria-hidden="true"></span><span><strong>Strategy and planning</strong> <small>Workshops, research and a practical plan your team can follow.</small></span></a></li>
+              <li><a href="services.html#brand" class="tone-2"><span class="dot" aria-hidden="true"></span><span><strong>Brand and design</strong> <small>Logos, visual systems and the guidelines to use them well.</small></span></a></li>
+              <li><a href="services.html#web" class="tone-3"><span class="dot" aria-hidden="true"></span><span><strong>Websites and digital tools</strong> <small>Fast, accessible websites and simple tools your customers enjoy using.</small></span></a></li>
+              <li><a href="services.html#operations" class="tone-4"><span class="dot" aria-hidden="true"></span><span><strong>Operations and support</strong> <small>Ongoing care: updates, small improvements and a team that answers.</small></span></a></li>
+              <li><a class="nav-menu__all" href="services.html">All services and packages</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="btn btn--outline btn--sm" href="contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="menu-btn__open" d="M3 6h14M3 14h14"/><path class="menu-btn__close" d="M5 5l10 10M15 5 5 15" display="none"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (shown below 1024px). Services is an accordion. -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li>
+        <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-services">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></button>
+        <ul class="mobile-menu__sub" id="mobile-services" hidden>
+            <li><a href="services.html">All services and packages</a></li>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contact.html">Contact us</a>
+    <p class="mobile-menu__contact"><a href="mailto:hello@example.com">hello@example.com</a><br><a href="tel:+15550100123">+1 (555) 010-0123</a></p>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         HERO: headline, intro, buttons and a color blob that cycles through
+         the service illustrations (one <img> per service; add or remove freely).
+         ================================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div>
+          <p class="kicker">A business studio for growing companies</p>
+          <h1 class="display" id="hero-title">Plan it well. Build it right. Keep it running.</h1>
+          <p class="lede lede--lg mt-md">Nova Business helps small and mid-sized companies with strategy, branding, websites and day-to-day digital operations. One team, from the first workshop to launch and beyond.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="services.html">See our services</a>
+            <a class="text-link" href="contact.html">Book a free call</a>
+          </div>
+        </div>
+
+        <div class="hero__stage">
+          <svg class="hero__blob" viewBox="0 0 500 500" aria-hidden="true">
+            <path class="hero__blob-fill" fill="var(--tone-1-tint)" d="M250,40 C360,40 455,120 455,240 C455,360 370,460 250,460 C130,460 45,370 45,250 C45,130 140,40 250,40Z"/>
+            <path class="hero__blob-ring" fill="none" stroke="var(--tone-1)" stroke-width="2" stroke-dasharray="4 10" d="M250,20 C372,20 475,112 475,240 C475,372 380,480 250,480 C120,480 25,382 25,250 C25,118 128,20 250,20Z"/>
+          </svg>
+          <img class="hero__img" src="assets/images/service-strategy.svg" alt="Planning board with a rising bar chart and a target" width="400" height="400" data-caption="Strategy and planning" data-tone="1">
+          <img class="hero__img" src="assets/images/service-brand.svg" alt="Design card with shapes, color swatches and a pen" width="400" height="400" loading="lazy" data-caption="Brand and design" data-tone="2">
+          <img class="hero__img" src="assets/images/service-web.svg" alt="Browser window showing a page layout and a cursor" width="400" height="400" loading="lazy" data-caption="Websites and digital tools" data-tone="3">
+          <img class="hero__img" src="assets/images/service-operations.svg" alt="Checklist, gear and chat bubble for ongoing support" width="400" height="400" loading="lazy" data-caption="Operations and support" data-tone="4">
+          <p class="hero__caption" aria-live="polite"><span class="hero__caption-dot" aria-hidden="true"></span><span class="hero__caption-text">Strategy and planning</span></p>
+        </div>
+      </div>
+      <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="hero__wave-path" fill="var(--color-surface)" d="M0,90 C240,70 480,110 720,92 C960,74 1200,108 1440,88 L1440,120 L0,120Z"/>
+      </svg>
+    </section>
+
+    <!-- ==================================================================
+         SERVICES SHOWCASE: on desktop the section pins and each service slides
+         in over the last. On mobile (or without JavaScript) they simply stack.
+         Add a service: copy one <article class="sheet"> block.
+         Turn it into products, a menu or a portfolio: change the text and images.
+         ================================================================== -->
+    <section class="showcase" id="services" aria-label="Services">
+      <div class="showcase__progress" aria-hidden="true">
+        <span>Overview</span><span class="showcase__bar"><span></span></span><span>Services</span>
+      </div>
+
+      <article class="sheet tone-1" id="home-overview" style="--tone-tint: var(--color-paper)">
+        <div class="container sheet__grid">
+          <div>
+            <p class="eyebrow">What we do</p>
+            <h2 class="h2 mt-sm">Four services that work best together</h2>
+            <p class="lede mt-sm">Pick one or combine them. Most clients start with a plan, then a brand or website, and stay with us for support.</p>
+            <a class="btn btn--primary mt-md" href="services.html">Compare services</a>
+          </div>
+          <ul class="service-rows">
+            <li><a class="service-row tone-1" href="services.html#strategy">
+              <span class="service-row__icon"><img src="assets/images/service-strategy.svg" alt="" width="400" height="400" loading="lazy"></span>
+              <span><h3>Strategy and planning</h3><p>Workshops, research and a practical plan your team can follow.</p></span>
+            </a></li>
+            <li><a class="service-row tone-2" href="services.html#brand">
+              <span class="service-row__icon"><img src="assets/images/service-brand.svg" alt="" width="400" height="400" loading="lazy"></span>
+              <span><h3>Brand and design</h3><p>Logos, visual systems and the guidelines to use them well.</p></span>
+            </a></li>
+            <li><a class="service-row tone-3" href="services.html#web">
+              <span class="service-row__icon"><img src="assets/images/service-web.svg" alt="" width="400" height="400" loading="lazy"></span>
+              <span><h3>Websites and digital tools</h3><p>Fast, accessible websites and simple tools your customers enjoy using.</p></span>
+            </a></li>
+            <li><a class="service-row tone-4" href="services.html#operations">
+              <span class="service-row__icon"><img src="assets/images/service-operations.svg" alt="" width="400" height="400" loading="lazy"></span>
+              <span><h3>Operations and support</h3><p>Ongoing care: updates, small improvements and a team that answers.</p></span>
+            </a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="sheet tone-1" id="home-strategy">
+        <div class="container sheet__grid">
+          <div class="disc-stage">
+            <div class="disc-stage__disc"></div>
+            <img class="disc-stage__img" src="assets/images/service-strategy.svg" alt="Planning board with a rising bar chart and a target" width="400" height="400" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow">01 / 04</p>
+            <h2 class="h2 mt-sm">Strategy and planning</h2>
+            <p class="lede mt-sm">We start by understanding where the business is today: customers, offers, competitors and the numbers behind them. Then we turn that into a clear plan with priorities, owners and dates.</p>
+            <ul class="checklist"><li>Discovery workshop with your team</li><li>Customer and competitor review</li><li>A 12-month roadmap with priorities</li></ul>
+            <a class="btn btn--primary mt-md" href="services.html#strategy">More about strategy</a>
+          </div>
+        </div>
+      </article>
+      <article class="sheet tone-2" id="home-brand">
+        <div class="container sheet__grid">
+          <div class="disc-stage">
+            <div class="disc-stage__disc"></div>
+            <img class="disc-stage__img" src="assets/images/service-brand.svg" alt="Design card with shapes, color swatches and a pen" width="400" height="400" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow">02 / 04</p>
+            <h2 class="h2 mt-sm">Brand and design</h2>
+            <p class="lede mt-sm">A brand should look the same on a business card, a website and a delivery van. We design identities that are simple to apply and document them so anyone on your team can use them correctly.</p>
+            <ul class="checklist"><li>Logo and visual identity</li><li>Color, type and image guidelines</li><li>Templates for everyday documents</li></ul>
+            <a class="btn btn--primary mt-md" href="services.html#brand">More about brand</a>
+          </div>
+        </div>
+      </article>
+      <article class="sheet tone-3" id="home-web">
+        <div class="container sheet__grid">
+          <div class="disc-stage">
+            <div class="disc-stage__disc"></div>
+            <img class="disc-stage__img" src="assets/images/service-web.svg" alt="Browser window showing a page layout and a cursor" width="400" height="400" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow">03 / 04</p>
+            <h2 class="h2 mt-sm">Websites and digital tools</h2>
+            <p class="lede mt-sm">We plan, design and build websites that load quickly, work on every screen and are easy for your team to update. When you need more, we build booking flows, online menus, product catalogs and customer portals.</p>
+            <ul class="checklist"><li>Content plan and page structure</li><li>Responsive design and development</li><li>Training so your team can update content</li></ul>
+            <a class="btn btn--primary mt-md" href="services.html#web">More about websites</a>
+          </div>
+        </div>
+      </article>
+      <article class="sheet tone-4" id="home-operations">
+        <div class="container sheet__grid">
+          <div class="disc-stage">
+            <div class="disc-stage__disc"></div>
+            <img class="disc-stage__img" src="assets/images/service-operations.svg" alt="Checklist, gear and chat bubble for ongoing support" width="400" height="400" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow">04 / 04</p>
+            <h2 class="h2 mt-sm">Operations and support</h2>
+            <p class="lede mt-sm">After launch we stay on hand for updates, fixes, reporting and small improvements, so your website and tools keep working while you focus on your customers.</p>
+            <ul class="checklist"><li>Monthly updates and backups</li><li>Priority help by email and phone</li><li>Quarterly review of results</li></ul>
+            <a class="btn btn--primary mt-md" href="services.html#operations">More about operations</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ==================================================================
+         PROCESS: a ring draws itself and lights up each step as you scroll.
+         Edit the five steps in the list; the ring numbers stay the same.
+         ================================================================== -->
+    <section class="section process bg-paper" id="process" aria-labelledby="process-title">
+      <div class="container process__grid">
+        <div>
+          <h2 class="h2" id="process-title">How a project runs, from first call to launch</h2>
+          <ol class="process-steps">
+            <li class="tone-1"><span class="step-num">1</span><span><strong>Discover:</strong> we learn how your business works</span></li>
+            <li class="tone-4"><span class="step-num">2</span><span><strong>Plan:</strong> we agree on priorities, budget and timeline</span></li>
+            <li class="tone-2"><span class="step-num">3</span><span><strong>Design:</strong> we shape the brand and the experience</span></li>
+            <li class="tone-3"><span class="step-num">4</span><span><strong>Build:</strong> we develop, test and launch</span></li>
+            <li class="tone-5"><span class="step-num">5</span><span><strong>Support:</strong> we measure, improve and keep things running</span></li>
+          </ol>
+        </div>
+        <svg class="process-ring" viewBox="0 0 560 560" aria-hidden="true">
+          <circle cx="280" cy="280" r="220" fill="none" stroke="#e6e4ef" stroke-width="14"/>
+          <circle class="process-ring__progress" cx="280" cy="280" r="220" fill="none" stroke="var(--color-ink)" stroke-width="14" stroke-linecap="round" transform="rotate(-90 280 280)"/>
+            <g class="process-node"><circle cx="280" cy="60" r="34" fill="var(--tone-1-ink)"/><text x="280" y="68" text-anchor="middle" font-size="24" fill="#fff">1</text></g>
+            <g class="process-node"><circle cx="489" cy="212" r="34" fill="var(--tone-4-ink)"/><text x="489" y="220" text-anchor="middle" font-size="24" fill="#fff">2</text></g>
+            <g class="process-node"><circle cx="409" cy="458" r="34" fill="var(--tone-2-ink)"/><text x="409" y="466" text-anchor="middle" font-size="24" fill="#fff">3</text></g>
+            <g class="process-node"><circle cx="151" cy="458" r="34" fill="var(--tone-3-ink)"/><text x="151" y="466" text-anchor="middle" font-size="24" fill="#fff">4</text></g>
+            <g class="process-node"><circle cx="71" cy="212" r="34" fill="var(--tone-5-ink)"/><text x="71" y="220" text-anchor="middle" font-size="24" fill="#fff">5</text></g>
+          <text x="280" y="270" text-anchor="middle" font-size="34" fill="var(--color-ink)">One team,</text>
+          <text x="280" y="312" text-anchor="middle" font-size="34" fill="var(--color-ink)">five steps</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- NUMBERS: one sentence with counters. -->
+    <section class="section bg-surface" id="numbers" aria-label="Numbers">
+      <div class="container">
+        <!-- Sample numbers: replace with your own. data-count is the number the counter animates to. -->
+        <p class="stats-sentence">
+          Since 2016 our team has delivered
+          <span class="tone-1"><span data-count="240">240</span>+</span> projects for
+          <span class="tone-2"><span data-count="90">90</span>+</span> clients across
+          <span class="tone-3"><span data-count="12">12</span></span> industries.
+        </p>
+        <p class="lede stats-note">We stay small on purpose: the people you meet in the first call are the people who do the work.</p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         TESTIMONIALS: reviews hang from a clothesline. Drag, swipe or use the arrows.
+         Add a review: copy one <li class="tag"> block. Change its tone-1 ... tone-5 class to recolor.
+         These reviews are fictional sample content: replace them with real ones.
+         ================================================================== -->
+    <section class="section bg-paper" id="reviews" aria-labelledby="reviews-title">
+      <div class="container section-head">
+        <div>
+          <h2 class="h2" id="reviews-title">What clients say</h2>
+          <p class="lede mt-sm">Notes from businesses we work with.</p>
+        </div>
+        <div class="section-head__controls">
+          <button class="icon-btn" type="button" data-line-back aria-label="Scroll reviews back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+          <button class="icon-btn icon-btn--solid" type="button" data-line-forward aria-label="Scroll reviews forward"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+        </div>
+      </div>
+      <div class="clothesline" data-clothesline tabindex="0" aria-label="Client reviews, scroll sideways">
+        <div class="clothesline__track">
+          <svg class="clothesline__line" aria-hidden="true"><path/></svg>
+          <ul class="clothesline__tags">
+          <li class="tag tone-1">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>They asked better questions about our business than we had asked ourselves. The plan they gave us is still pinned above my desk.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">AH</span><span><span class="person__name">Amira Haddad</span><span class="person__role">Owner, Willow &amp; Rye Bakery</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="tag tone-2">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>Our new site is easy to update, and patients tell us booking online is simple. That was the whole point.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">DO</span><span><span class="person__name">Daniel Okafor</span><span class="person__role">Clinic Manager, Northside Physio</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="tag tone-3">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>Clear timelines, honest estimates and no surprises when the invoice arrives.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">PR</span><span><span class="person__name">Priya Raman</span><span class="person__role">Co-founder, Fieldnote Apps</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="tag tone-4">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>The brand guidelines mean our whole team finally uses the same logo, colors and fonts.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">MB</span><span><span class="person__name">Marco Bellini</span><span class="person__role">Marketing Lead, Bellini Home Goods</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="tag tone-5">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>When something breaks, they pick up the phone. That matters more to us than any feature.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">SL</span><span><span class="person__name">Sarah Lindqvist</span><span class="person__role">Operations Director, Coastline Logistics</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="tag tone-2">
+            <span class="tag__peg" aria-hidden="true"></span>
+            <div class="tag__swing">
+              <figure class="tag__body">
+                <span class="tag__hole" aria-hidden="true"></span>
+                <div class="mt-sm"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div></div>
+                <blockquote>They explained every option in plain language and then let us decide.</blockquote>
+                <figcaption><span class="avatar" aria-hidden="true">TR</span><span><span class="person__name">Tomás Ruiz</span><span class="person__role">Founder, Ruiz Coffee Roasters</span></span></figcaption>
+              </figure>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         FAQ: native <details> elements, so it works without JavaScript.
+         Add a question: copy one <details class="faq__item"> block
+         (and update the FAQ structured data in <head> if you keep it).
+         ================================================================== -->
+    <section class="section bg-surface faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div>
+          <h2 class="h2" id="faq-title">Questions we hear often</h2>
+          <p class="lede mt-sm">Can't find your answer? <a class="text-link" href="contact.html">Ask us directly</a>.</p>
+        </div>
+        <div class="faq__list" data-stagger>
+            <details class="faq__item">
+              <summary>How much does a project cost?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>Every project is quoted after a short discovery call. Most small business websites fit one of our three packages; larger projects are priced by scope.</p>
+            </details>
+            <details class="faq__item">
+              <summary>How long does a typical project take?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>Brand and website projects usually take 4 to 12 weeks, depending on size and how quickly feedback comes back.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Can we update the website ourselves?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>Yes. We build on tools your team can use, and every project includes a training session.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Do you work with businesses in other cities?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>Yes. Most workshops and reviews run online, and we meet in person when it helps.</p>
+            </details>
+            <details class="faq__item">
+              <summary>What do you need from us to get started?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>A short call, any existing brand material, and one person on your side who can make decisions.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Do you offer support after launch?<span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+              <p>Yes. Our monthly support plans cover updates, backups, fixes and small improvements.</p>
+            </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND: a closing call to action. Remove this <section> if you don't need it. -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__inner" data-reveal="scale">
+          <span class="cta-band__orb cta-band__orb--1" data-parallax="0.6" aria-hidden="true"></span>
+          <span class="cta-band__orb cta-band__orb--2" data-parallax="-0.4" aria-hidden="true"></span>
+          <div>
+            <h2 class="h2" id="cta-title">Have a project in mind?</h2>
+            <p class="lede">Tell us a little about your business and what you want to change. We reply within one working day.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--light" href="contact.html">Book a call</a>
+            <a class="btn btn--outline" href="mailto:hello@example.com">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================================
+       FOOTER: brand blurb, links, contact details and copyright.
+       ================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__cols">
+        <div class="site-footer__about">
+          <a class="brand" href="index.html" aria-label="Nova Business home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span class="brand__name">Nova Business</span>
+          </a>
+          <p>Strategy, brand, websites and support for small and mid-sized companies.</p>
+        </div>
+        <nav aria-labelledby="footer-services">
+          <h2 id="footer-services">Services</h2>
+          <ul>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-company">
+          <h2 id="footer-company">Company</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+15550100123">+1 (555) 010-0123</a></li>
+            <li><address>Unit 4, 21 Harbour Lane<br>Brightwater 00000</address></li>
+          </ul>
+          <!-- Social links: replace each URL with your own profile, or delete the line -->
+          <ul>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tone-stripe" data-stagger="grow" aria-hidden="true"><span style="background:var(--tone-1)"></span><span style="background:var(--tone-2)"></span><span style="background:var(--tone-3)"></span><span style="background:var(--tone-4)"></span><span style="background:var(--tone-5)"></span></div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span data-year>2026</span> Nova Business. Demo content for a fictional company.</p>
+        <p>Template by <a href="https://webarray.net">WebArray</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts. GSAP powers the animations; the site still works (without motion) if it fails to load.
+       GSAP is free under the GSAP Standard License: https://gsap.com/standard-license -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

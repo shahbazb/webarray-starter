@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebArray Starter | Free HTML website templates</title>
+  <meta name="description" content="Free, open-source HTML website templates by WebArray. Static, responsive and easy to customize. Preview each template live and download the source.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebArray Starter | Free HTML website templates">
+  <meta property="og:description" content="Free, open-source HTML website templates by WebArray.">
+  <meta property="og:url" content="https://sb-blip.github.io/webarray-starter/">
+  <meta property="og:image" content="https://sb-blip.github.io/webarray-starter/nova-business/assets/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="nova-business/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;600&display=swap">
+  <style>
+    :root {
+      --ink: #1e1b2e; --ink-soft: #57536a; --paper: #f7f7fb; --surface: #fff; --line: rgba(30, 27, 46, .12);
+      --accent-ink: #b5441a; --display: "Young Serif", Georgia, serif; --body: "Schibsted Grotesk", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; height: auto; }
+    :focus-visible { outline: 3px solid #e8622c; outline-offset: 3px; border-radius: 6px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 72px 0 40px; }
+    .brand { font-family: var(--display); font-size: 22px; }
+    h1 { font-family: var(--display); font-weight: 400; font-size: clamp(40px, 6vw, 76px); line-height: 1.04; margin: 28px 0 0; max-width: 16ch; }
+    .lede { color: var(--ink-soft); font-size: 19px; max-width: 58ch; margin: 22px 0 0; }
+    .grid { display: grid; gap: 24px; padding: 24px 0 96px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: var(--surface); border-radius: 28px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(30, 27, 46, .08); }
+    .card__body { padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+    .card h2 { font-family: var(--display); font-weight: 400; font-size: 32px; margin: 0; }
+    .card p { margin: 0; color: var(--ink-soft); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+    .tags li { background: var(--paper); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 8px; }
+    .btn { display: inline-flex; align-items: center; border-radius: 999px; padding: 12px 22px; font-weight: 600; text-decoration: none; border: 2px solid var(--ink); }
+    .btn--primary { background: var(--ink); color: var(--paper); }
+    .btn--primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+    .btn--outline:hover { background: var(--ink); color: var(--paper); }
+    .card--soon { background: transparent; border: 2px dashed var(--line); box-shadow: none; justify-content: center; }
+    .card--soon .card__body { justify-content: center; text-align: center; align-items: center; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--ink-soft); font-size: 15px; }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="brand">WebArray Starter</p>
+    <h1>Free HTML website templates</h1>
+    <p class="lede">Static, responsive templates you can open in a browser and edit with any text editor. No build tools, no frameworks. Preview each one live, then download the source and make it yours.</p>
+  </header>
+
+  <main class="wrap grid" id="templates">
+    <!-- One <article class="card"> per template. Copy this block when you add a new template folder. -->
+    <article class="card">
+      <a href="nova-business/index.html" aria-label="Open the Nova Business live demo">
+        <img src="nova-business/assets/images/og-image.png" alt="Nova Business template preview: headline and colorful service tiles" width="1200" height="630">
+      </a>
+      <div class="card__body">
+        <h2>Nova Business</h2>
+        <p>A multipurpose business website with five pages: home, services, about, contact and 404. Includes GSAP animations, parallax, a pinned services showcase, testimonials, FAQ, packages and a validated contact form.</p>
+        <ul class="tags" aria-label="Good for">
+          <li>Agencies and studios</li><li>Professional services</li><li>Small businesses</li><li>Startups</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--primary" href="nova-business/index.html">View live demo</a>
+          <a class="btn btn--outline" href="https://github.com/sb-blip/webarray-starter/tree/main/nova-business">Source and docs</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card--soon" aria-label="More templates coming">
+      <div class="card__body">
+        <h2>More templates soon</h2>
+        <p>New templates will appear here as they are published.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Made by <a href="https://webarray.net">WebArray</a>. Code and template images under the MIT License.</p>
+      <p><a href="https://github.com/sb-blip/webarray-starter">View on GitHub</a> &middot; <a href="https://github.com/sb-blip/webarray-starter/archive/refs/heads/main.zip">Download all templates (ZIP)</a></p>
+    </div>
+  </footer>
+</body>
+</html>

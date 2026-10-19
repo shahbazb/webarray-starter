@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="t"><title id="t">Planning board with a rising bar chart and a target</title>
+<rect x="62" y="70" width="276" height="250" rx="26" fill="#FFFFFF" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="160" y="48" width="80" height="40" rx="12" fill="#C9E3A8" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M98 280h204" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="108" y="214" width="34" height="66" rx="8" fill="#EEF6E3" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="160" y="182" width="34" height="98" rx="8" fill="#C9E3A8" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="212" y="146" width="34" height="134" rx="8" fill="#6FA83A" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M104 196 160 158 206 170 276 112" fill="none" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M252 110h26v26" fill="none" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="292" cy="246" r="40" fill="#FFFFFF" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="292" cy="246" r="24" fill="#EEF6E3" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="292" cy="246" r="8" fill="#6FA83A" stroke="#1E1B2E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

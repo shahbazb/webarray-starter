@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: change the title and description on every page -->
+  <title>About | Nova Business</title>
+  <meta name="description" content="Meet Nova Business: a small team of strategists, designers and developers working with growing companies.">
+  <meta name="theme-color" content="#1e1b2e">
+
+  <!-- Social sharing (Open Graph / X). Replace https://example.com with your own domain:
+       social networks need absolute URLs for og:url and og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nova Business">
+  <meta property="og:title" content="About | Nova Business">
+  <meta property="og:description" content="Meet Nova Business: a small team of strategists, designers and developers working with growing companies.">
+  <meta property="og:url" content="https://example.com/about.html">
+  <meta property="og:image" content="https://example.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Fonts: Young Serif + Schibsted Grotesk from Google Fonts (SIL Open Font License).
+       To change fonts, swap this link and the --font-display / --font-body variables in style.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================================================================
+       HEADER: logo, main navigation and mobile menu button.
+       Edit the links here and in the mobile menu below (keep both in sync).
+       ================================================================== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Nova Business home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span class="brand__name">Nova Business</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-drop">
+          <a class="nav-drop__toggle" href="services.html" aria-haspopup="true">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></a>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="services.html#strategy" class="tone-1"><span class="dot" aria-hidden="true"></span><span><strong>Strategy and planning</strong> <small>Workshops, research and a practical plan your team can follow.</small></span></a></li>
+              <li><a href="services.html#brand" class="tone-2"><span class="dot" aria-hidden="true"></span><span><strong>Brand and design</strong> <small>Logos, visual systems and the guidelines to use them well.</small></span></a></li>
+              <li><a href="services.html#web" class="tone-3"><span class="dot" aria-hidden="true"></span><span><strong>Websites and digital tools</strong> <small>Fast, accessible websites and simple tools your customers enjoy using.</small></span></a></li>
+              <li><a href="services.html#operations" class="tone-4"><span class="dot" aria-hidden="true"></span><span><strong>Operations and support</strong> <small>Ongoing care: updates, small improvements and a team that answers.</small></span></a></li>
+              <li><a class="nav-menu__all" href="services.html">All services and packages</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="btn btn--outline btn--sm" href="contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="menu-btn__open" d="M3 6h14M3 14h14"/><path class="menu-btn__close" d="M5 5l10 10M15 5 5 15" display="none"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (shown below 1024px). Services is an accordion. -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-services">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></button>
+        <ul class="mobile-menu__sub" id="mobile-services" hidden>
+            <li><a href="services.html">All services and packages</a></li>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contact.html">Contact us</a>
+    <p class="mobile-menu__contact"><a href="mailto:hello@example.com">hello@example.com</a><br><a href="tel:+15550100123">+1 (555) 010-0123</a></p>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO: breadcrumb, title and intro. Change the tone class to recolor. -->
+    <section class="page-hero tone-2">
+      <!-- Decorative dots: each drifts at its own speed (data-parallax). Delete freely. -->
+      <span class="page-hero__dot page-hero__dot--1" data-parallax="0.5" aria-hidden="true"></span>
+      <span class="page-hero__dot page-hero__dot--2" data-parallax="0.25" aria-hidden="true"></span>
+      <span class="page-hero__dot page-hero__dot--3" data-parallax="0.8" aria-hidden="true"></span>
+      <div class="container page-hero__grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">About</span></li></ol></nav>
+          <h1 class="h1" data-split>A small team for growing businesses</h1>
+          <p class="lede lede--lg" data-reveal>Nova Business is a studio of strategists, designers and developers. We work with companies that are too big to do everything themselves and too small for a large agency.</p>
+        </div>
+        <!-- Illustration stage: blob morphs, ring turns, image floats, and the whole stage scrolls at its own speed -->
+        <div class="page-hero__stage" data-parallax="-0.12">
+          <svg class="page-hero__blob" viewBox="0 0 500 500" aria-hidden="true">
+            <path class="morph-blob" d="M250,40 C360,40 455,120 455,240 C455,360 370,460 250,460 C130,460 45,370 45,250 C45,130 140,40 250,40Z"/>
+            <path class="spin-ring" d="M250,20 C372,20 475,112 475,240 C475,372 380,480 250,480 C120,480 25,382 25,250 C25,118 128,20 250,20Z"/>
+          </svg>
+          <img class="page-hero__visual" data-float src="assets/images/about-workspace.svg" alt="Desk with a laptop, a plant and a coffee mug" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY: two columns of text. Replace with your own story. -->
+    <section class="section bg-surface" aria-labelledby="story-title">
+      <div class="container split">
+        <h2 class="h2" id="story-title">How we started</h2>
+        <div>
+          <p class="lede" data-reveal="lines">We started in 2016 after years of watching good local businesses struggle with websites they could not update and brands nobody on the team understood.</p>
+          <p class="lede" data-reveal="lines">So we built the studio we wished existed: one team that plans, designs, builds and then sticks around to help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION AND MISSION: two statements. Delete either <article> if you only need one. -->
+    <section class="section bg-paper" aria-label="Vision and mission">
+      <div class="container grid-2">
+        <article class="statement tone-1" data-reveal="wipe"><p class="eyebrow">Our vision</p><p>Every growing business should have a brand and a website it is proud to show.</p></article>
+        <article class="statement tone-2" data-reveal="wipe"><p class="eyebrow">Our mission</p><p>To give smaller companies the planning, design and technology that larger ones take for granted.</p></article>
+      </div>
+    </section>
+
+    <!-- VALUES: add or remove cards; the grid adjusts. -->
+    <section class="section bg-surface" aria-labelledby="values-title">
+      <div class="container">
+        <h2 class="h2" id="values-title">What we value</h2>
+        <div class="cards-grid cards-grid--4" data-stagger>
+          <article class="value-card tone-1" data-tilt><span class="value-card__dot" data-pulse aria-hidden="true"></span><h3>Clarity</h3><p>We explain options in plain language and write things down.</p></article>
+          <article class="value-card tone-2" data-tilt><span class="value-card__dot" data-pulse aria-hidden="true"></span><h3>Craft</h3><p>Small details are what customers notice. We sweat them.</p></article>
+          <article class="value-card tone-3" data-tilt><span class="value-card__dot" data-pulse aria-hidden="true"></span><h3>Honesty</h3><p>Realistic timelines and estimates, even when they are not what you hoped to hear.</p></article>
+          <article class="value-card tone-4" data-tilt><span class="value-card__dot" data-pulse aria-hidden="true"></span><h3>Care</h3><p>We treat your business like a long-term relationship, not a single project.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM: initials avatars. To use photos, replace <span class="avatar"> with
+         <img class="avatar avatar--xl" src="assets/images/your-photo.jpg" alt="Name" width="96" height="96"> -->
+    <section class="section bg-paper" aria-labelledby="team-title">
+      <div class="container">
+        <h2 class="h2" id="team-title">The team</h2>
+        <p class="lede mt-sm">The people you meet in the first call are the people who do the work.</p>
+        <div class="cards-grid cards-grid--4 team-grid" data-stagger="pop">
+          <article class="team-card tone-1"><span class="avatar avatar--xl" data-float aria-hidden="true">LO</span><h3>Lena Ortiz</h3><p>Founder and strategy lead</p></article>
+          <article class="team-card tone-2"><span class="avatar avatar--xl" data-float aria-hidden="true">SW</span><h3>Sam Whitfield</h3><p>Design director</p></article>
+          <article class="team-card tone-3"><span class="avatar avatar--xl" data-float aria-hidden="true">NK</span><h3>Noor Khalid</h3><p>Lead developer</p></article>
+          <article class="team-card tone-4"><span class="avatar avatar--xl" data-float aria-hidden="true">JM</span><h3>Jonah Mercer</h3><p>Client support</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-surface" aria-label="Numbers">
+      <div class="container">
+        <!-- Sample numbers: replace with your own. data-count is the number the counter animates to. -->
+        <p class="stats-sentence">
+          Since 2016 our team has delivered
+          <span class="tone-1"><span data-count="240">240</span>+</span> projects for
+          <span class="tone-2"><span data-count="90">90</span>+</span> clients across
+          <span class="tone-3"><span data-count="12">12</span></span> industries.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         TESTIMONIALS: card deck. Drag, use the buttons or the arrow keys.
+         To add a review, copy one <figure class="deck-card"> block.
+         These reviews are fictional sample content: replace them with real ones.
+         ================================================================== -->
+    <section class="section bg-paper deck-section" data-deck aria-labelledby="deck-title">
+      <div class="container deck-section__grid">
+        <div>
+          <h2 class="h2" id="deck-title">What clients say</h2>
+          <p class="lede mt-sm">Businesses we work with, in their own words.</p>
+          <div class="deck-controls">
+            <button class="icon-btn" type="button" data-deck-prev aria-label="Previous review"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+            <button class="icon-btn icon-btn--solid" type="button" data-deck-next aria-label="Next review"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+            <p class="deck-count" aria-live="polite"><span data-deck-pos>1</span> <span class="muted">/ 6</span></p>
+          </div>
+          <p class="deck-hint">Drag the top card to flick through.</p>
+        </div>
+        <div class="deck" data-deck-stack tabindex="0" aria-roledescription="carousel" aria-label="Customer reviews">
+          <figure class="deck-card tone-1" aria-label="Review 1 of 6, from Amira Haddad">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>They asked better questions about our business than we had asked ourselves. The plan they gave us is still pinned above my desk.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">AH</span><span><span class="person__name">Amira Haddad</span><span class="person__role">Owner, Willow &amp; Rye Bakery</span></span></figcaption>
+          </figure>
+          <figure class="deck-card tone-2" aria-label="Review 2 of 6, from Daniel Okafor">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>Our new site is easy to update, and patients tell us booking online is simple. That was the whole point.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">DO</span><span><span class="person__name">Daniel Okafor</span><span class="person__role">Clinic Manager, Northside Physio</span></span></figcaption>
+          </figure>
+          <figure class="deck-card tone-3" aria-label="Review 3 of 6, from Priya Raman">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>Clear timelines, honest estimates and no surprises when the invoice arrives.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">PR</span><span><span class="person__name">Priya Raman</span><span class="person__role">Co-founder, Fieldnote Apps</span></span></figcaption>
+          </figure>
+          <figure class="deck-card tone-4" aria-label="Review 4 of 6, from Marco Bellini">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>The brand guidelines mean our whole team finally uses the same logo, colors and fonts.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">MB</span><span><span class="person__name">Marco Bellini</span><span class="person__role">Marketing Lead, Bellini Home Goods</span></span></figcaption>
+          </figure>
+          <figure class="deck-card tone-5" aria-label="Review 5 of 6, from Sarah Lindqvist">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>When something breaks, they pick up the phone. That matters more to us than any feature.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">SL</span><span><span class="person__name">Sarah Lindqvist</span><span class="person__role">Operations Director, Coastline Logistics</span></span></figcaption>
+          </figure>
+          <figure class="deck-card tone-2" aria-label="Review 6 of 6, from Tomás Ruiz">
+            <div class="deck-card__top"><div class="stars" role="img" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.7 1-5.9L1.5 7.7l5.9-.8z"/></svg></div><svg class="deck-card__mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M14 70c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H14zm42 0c0-22 10-38 30-46l4 8c-10 5-15 13-15 22h13v28H56z"/></svg></div>
+            <blockquote>They explained every option in plain language and then let us decide.</blockquote>
+            <figcaption><span class="avatar avatar--lg" aria-hidden="true">TR</span><span><span class="person__name">Tomás Ruiz</span><span class="person__role">Founder, Ruiz Coffee Roasters</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND: a closing call to action. Remove this <section> if you don't need it. -->
+    <section class="section cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band__inner" data-reveal="scale">
+          <span class="cta-band__orb cta-band__orb--1" data-parallax="0.6" aria-hidden="true"></span>
+          <span class="cta-band__orb cta-band__orb--2" data-parallax="-0.4" aria-hidden="true"></span>
+          <div>
+            <h2 class="h2" id="cta-title">Have a project in mind?</h2>
+            <p class="lede">Tell us a little about your business and what you want to change. We reply within one working day.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--light" href="contact.html">Book a call</a>
+            <a class="btn btn--outline" href="mailto:hello@example.com">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================================
+       FOOTER: brand blurb, links, contact details and copyright.
+       ================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__cols">
+        <div class="site-footer__about">
+          <a class="brand" href="index.html" aria-label="Nova Business home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span class="brand__name">Nova Business</span>
+          </a>
+          <p>Strategy, brand, websites and support for small and mid-sized companies.</p>
+        </div>
+        <nav aria-labelledby="footer-services">
+          <h2 id="footer-services">Services</h2>
+          <ul>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-company">
+          <h2 id="footer-company">Company</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+15550100123">+1 (555) 010-0123</a></li>
+            <li><address>Unit 4, 21 Harbour Lane<br>Brightwater 00000</address></li>
+          </ul>
+          <!-- Social links: replace each URL with your own profile, or delete the line -->
+          <ul>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tone-stripe" data-stagger="grow" aria-hidden="true"><span style="background:var(--tone-1)"></span><span style="background:var(--tone-2)"></span><span style="background:var(--tone-3)"></span><span style="background:var(--tone-4)"></span><span style="background:var(--tone-5)"></span></div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span data-year>2026</span> Nova Business. Demo content for a fictional company.</p>
+        <p>Template by <a href="https://webarray.net">WebArray</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts. GSAP powers the animations; the site still works (without motion) if it fails to load.
+       GSAP is free under the GSAP Standard License: https://gsap.com/standard-license -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

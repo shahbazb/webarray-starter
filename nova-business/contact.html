@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: change the title and description on every page -->
+  <title>Contact | Nova Business</title>
+  <meta name="description" content="Contact Nova Business by email, phone or the contact form. We reply within one working day.">
+  <meta name="theme-color" content="#1e1b2e">
+
+  <!-- Social sharing (Open Graph / X). Replace https://example.com with your own domain:
+       social networks need absolute URLs for og:url and og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nova Business">
+  <meta property="og:title" content="Contact | Nova Business">
+  <meta property="og:description" content="Contact Nova Business by email, phone or the contact form. We reply within one working day.">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <meta property="og:image" content="https://example.com/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Fonts: Young Serif + Schibsted Grotesk from Google Fonts (SIL Open Font License).
+       To change fonts, swap this link and the --font-display / --font-body variables in style.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================================================================
+       HEADER: logo, main navigation and mobile menu button.
+       Edit the links here and in the mobile menu below (keep both in sync).
+       ================================================================== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Nova Business home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span class="brand__name">Nova Business</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-drop">
+          <a class="nav-drop__toggle" href="services.html" aria-haspopup="true">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></a>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="services.html#strategy" class="tone-1"><span class="dot" aria-hidden="true"></span><span><strong>Strategy and planning</strong> <small>Workshops, research and a practical plan your team can follow.</small></span></a></li>
+              <li><a href="services.html#brand" class="tone-2"><span class="dot" aria-hidden="true"></span><span><strong>Brand and design</strong> <small>Logos, visual systems and the guidelines to use them well.</small></span></a></li>
+              <li><a href="services.html#web" class="tone-3"><span class="dot" aria-hidden="true"></span><span><strong>Websites and digital tools</strong> <small>Fast, accessible websites and simple tools your customers enjoy using.</small></span></a></li>
+              <li><a href="services.html#operations" class="tone-4"><span class="dot" aria-hidden="true"></span><span><strong>Operations and support</strong> <small>Ongoing care: updates, small improvements and a team that answers.</small></span></a></li>
+              <li><a class="nav-menu__all" href="services.html">All services and packages</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="btn btn--outline btn--sm" href="contact.html" aria-current="page">Contact us</a></li>
+      </ul>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path class="menu-btn__open" d="M3 6h14M3 14h14"/><path class="menu-btn__close" d="M5 5l10 10M15 5 5 15" display="none"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (shown below 1024px). Services is an accordion. -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-services">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4.5 6 8l4-3.5"/></svg></button>
+        <ul class="mobile-menu__sub" id="mobile-services" hidden>
+            <li><a href="services.html">All services and packages</a></li>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contact.html" aria-current="page">Contact us</a>
+    <p class="mobile-menu__contact"><a href="mailto:hello@example.com">hello@example.com</a><br><a href="tel:+15550100123">+1 (555) 010-0123</a></p>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO: breadcrumb, title and intro. Change the tone class to recolor. -->
+    <section class="page-hero tone-1">
+      <!-- Decorative dots: each drifts at its own speed (data-parallax). Delete freely. -->
+      <span class="page-hero__dot page-hero__dot--1" data-parallax="0.5" aria-hidden="true"></span>
+      <span class="page-hero__dot page-hero__dot--2" data-parallax="0.25" aria-hidden="true"></span>
+      <span class="page-hero__dot page-hero__dot--3" data-parallax="0.8" aria-hidden="true"></span>
+      <div class="container page-hero__grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Contact</span></li></ol></nav>
+          <h1 class="h1" data-split>Let's talk about your project</h1>
+          <p class="lede lede--lg" data-reveal>Tell us where your business is today and what you want to change. We reply within one working day.</p>
+        </div>
+        <!-- Illustration stage: blob morphs, ring turns, image floats, and the whole stage scrolls at its own speed -->
+        <div class="page-hero__stage" data-parallax="-0.12">
+          <svg class="page-hero__blob" viewBox="0 0 500 500" aria-hidden="true">
+            <path class="morph-blob" d="M250,40 C360,40 455,120 455,240 C455,360 370,460 250,460 C130,460 45,370 45,250 C45,130 140,40 250,40Z"/>
+            <path class="spin-ring" d="M250,20 C372,20 475,112 475,240 C475,372 380,480 250,480 C120,480 25,382 25,250 C25,118 128,20 250,20Z"/>
+          </svg>
+          <img class="page-hero__visual" data-float src="assets/images/contact-message.svg" alt="Envelope and chat bubbles" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-surface" aria-label="Contact details and form">
+      <div class="container contact-grid">
+
+        <!-- CONTACT DETAILS: update email, phone, address and hours -->
+        <div class="tone-2">
+          <h2 class="h2">Talk to us directly</h2>
+          <div class="contact-list" data-stagger>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="tel:+15550100123">+1 (555) 010-0123</a>
+          </div>
+          <address class="contact-address">Unit 4, 21 Harbour Lane<br>Brightwater 00000</address>
+          <h3 class="h3 mt-lg">Opening hours</h3>
+          <div class="hours" data-stagger>
+            <div><span>Monday to Thursday</span><span>9:00 to 17:30</span></div>
+            <div><span>Friday</span><span>9:00 to 15:00</span></div>
+            <div><span>Weekends</span><span>Closed</span></div>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             CONTACT FORM
+             The form is in DEMO MODE (data-demo="true"): it checks the fields but sends nothing.
+             To receive messages, see "Contact form" in README.md (for example with Formspree):
+             set action="https://formspree.io/f/your-id" and data-demo="false".
+             ================================================================== -->
+        <div class="form-card tone-1" data-reveal="scale">
+          <h2 class="h2">Send a message</h2>
+          <form class="form" action="#" method="post" data-contact-form data-demo="true" novalidate>
+            <div class="form-status" role="status" hidden></div>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="company">Company <span class="optional">(optional)</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="topic">What can we help with?</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic</option><option value="strategy">Strategy and planning</option><option value="brand">Brand and design</option><option value="web">Websites and digital tools</option><option value="operations">Operations and support</option>
+                <option value="launch">Launch package</option><option value="grow">Grow package</option><option value="partner">Partner package</option>
+                <option value="other">Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================================
+       FOOTER: brand blurb, links, contact details and copyright.
+       ================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__cols">
+        <div class="site-footer__about">
+          <a class="brand" href="index.html" aria-label="Nova Business home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span class="brand__name">Nova Business</span>
+          </a>
+          <p>Strategy, brand, websites and support for small and mid-sized companies.</p>
+        </div>
+        <nav aria-labelledby="footer-services">
+          <h2 id="footer-services">Services</h2>
+          <ul>
+            <li><a href="services.html#strategy">Strategy and planning</a></li>
+            <li><a href="services.html#brand">Brand and design</a></li>
+            <li><a href="services.html#web">Websites and digital tools</a></li>
+            <li><a href="services.html#operations">Operations and support</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="footer-company">
+          <h2 id="footer-company">Company</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+15550100123">+1 (555) 010-0123</a></li>
+            <li><address>Unit 4, 21 Harbour Lane<br>Brightwater 00000</address></li>
+          </ul>
+          <!-- Social links: replace each URL with your own profile, or delete the line -->
+          <ul>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tone-stripe" data-stagger="grow" aria-hidden="true"><span style="background:var(--tone-1)"></span><span style="background:var(--tone-2)"></span><span style="background:var(--tone-3)"></span><span style="background:var(--tone-4)"></span><span style="background:var(--tone-5)"></span></div>
+      <div class="site-footer__bottom">
+        <p>&copy; <span data-year>2026</span> Nova Business. Demo content for a fictional company.</p>
+        <p>Template by <a href="https://webarray.net">WebArray</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts. GSAP powers the animations; the site still works (without motion) if it fails to load.
+       GSAP is free under the GSAP Standard License: https://gsap.com/standard-license -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

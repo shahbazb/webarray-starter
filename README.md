@@ -4,19 +4,19 @@ Free, open-source HTML website templates by [WebArray](https://webarray.net).
 
 Every template is a plain static website: open `index.html` in a browser and edit it with any text editor. No build tools, no frameworks, no backend.
 
-**Browse and preview the templates:** https://sb-blip.github.io/webarray-starter/
+**Browse and preview the templates:** https://shahbazb.github.io/webarray-starter/
 
 ## Templates
 
 | Template | Live demo | Good for |
 | --- | --- | --- |
-| [Nova Business](nova-business/) | [View demo](https://sb-blip.github.io/webarray-starter/nova-business/) | Agencies, studios, professional services, small businesses, startups |
+| [Nova Business](nova-business/) | [View demo](https://shahbazb.github.io/webarray-starter/nova-business/) | Agencies, studios, professional services, small businesses, startups |
 
 Each template folder has its own `README.md` with setup, customization and deployment instructions.
 
 ## Download a template
 
-1. Click the green **Code** button on this page, then **Download ZIP** (or [download it directly](https://github.com/sb-blip/webarray-starter/archive/refs/heads/main.zip)).
+1. Click the green **Code** button on this page, then **Download ZIP** (or [download it directly](https://github.com/shahbazb/webarray-starter/archive/refs/heads/main.zip)).
 2. Unzip it and copy the folder of the template you want, for example `nova-business/`.
 3. Open that folder's `index.html` in your browser, then follow its `README.md`.
 

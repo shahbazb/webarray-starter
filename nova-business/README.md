@@ -2,7 +2,7 @@
 
 A free, static HTML website template by [WebArray](https://webarray.net). It ships with a fictional demo company, **Nova Business**, so you can see a complete, working site before you make it your own.
 
-**Live demo:** https://sb-blip.github.io/webarray-starter/nova-business/ (part of the [WebArray Starter](https://github.com/sb-blip/webarray-starter) collection)
+**Live demo:** https://shahbazb.github.io/webarray-starter/nova-business/ (part of the [WebArray Starter](https://github.com/shahbazb/webarray-starter) collection)
 
 It suits small and mid-sized businesses, agencies and consultants, professional services, restaurants and food businesses, health and wellness studios, product brands and startups. You adapt it by changing the text, images, colors and sections. No build tools, no frameworks, no backend.
 

@@ -11,6 +11,7 @@ Every template is a plain static website: open `index.html` in a browser and edi
 | Template | Live demo | Good for |
 | --- | --- | --- |
 | [Nova Business](nova-business/) | [View demo](https://shahbazb.github.io/webarray-starter/nova-business/) | Agencies, studios, professional services, small businesses, startups |
+| [Ember & Anise](ember-anise/) | [View demo](https://shahbazb.github.io/webarray-starter/ember-anise/) | Restaurants, cafes, bistros, wine bars, food businesses |
 
 Each template folder has its own `README.md` with setup, customization and deployment instructions.
 
@@ -29,6 +30,7 @@ webarray-starter/
 ├── index.html          Landing page listing all templates (served by GitHub Pages)
 ├── 404.html            "Page not found" page for the whole site
 ├── nova-business/      Nova Business template (self-contained)
+├── ember-anise/        Ember & Anise restaurant template (self-contained)
 ├── LICENSE
 └── README.md
 ```

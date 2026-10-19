@@ -166,6 +166,10 @@ All paths in the template are relative, so it works from that sub-folder address
 
 Netlify, Cloudflare Pages, Vercel or any regular web host: upload the folder as-is. There is no build command and the output folder is the project root.
 
+### Updating a live site
+
+Each page loads `assets/css/style.css?v=2` and `assets/js/main.js?v=2`. Browsers and hosts such as GitHub Pages cache these files, so visitors may keep seeing an old version for a while after you change them. When you edit the CSS or JavaScript, raise the number (`?v=3`, `?v=4`, ...) in every page so browsers download the new file.
+
 ## 11. Dependencies and licenses
 
 | Dependency | How it's loaded | License |
